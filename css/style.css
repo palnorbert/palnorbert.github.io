@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&family=Roboto&display=swap');
+
+html {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+p {
+    color: rgb(122, 96, 96);
+    font-size: 24px;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: normal;
+    font-weight: lighter;
