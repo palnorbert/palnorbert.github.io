@@ -22,7 +22,73 @@
 
     </div>
     <h1>Orders</h1>
-    <a href="/pages/products.html">Products</a>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>
+                    Personal Data
+                </legend>
+                <div>
+                    <label for="name">Name:*</label>
+                    <input id="name" name="name" type="text" placeholder="Name" required>
+                </div>
+                <div>
+                    <label for="email">Email address:*</label>
+                    <input id="email" name="email" type="email" placeholder="Email address" required>
+                </div>
+                <div>
+                    <label for="address">Address:*</label>
+                    <input id="address" name="address" type="text" placeholder="Address" required>
+                </div>
+                <div>
+                    <label for="comment">Comment:*</label>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+            </fieldset>
+<Fieldset>
+    <legend>Product Information</legend>
+</Fieldset>
+            <span>Extra topping:</span>
+            <div>
+                <input checked id="nothing" name="extra" value="0" type="radio">
+                <label for="nothing">I wouldn't like to have any.</label>
+            </div>
+            <div>
+                <input id="cheese" name="extra" value="300" type="radio">
+                <label for="cheese">Cheese</label>
+            </div>
+            <div>
+                <input id="double-cheese" name="extra" value="600" type="radio">
+                <label for="double-cheese">Double cheese</label>
+            </div>
+            <div>
+                <input id="double-ham" name="extra" value="1000" type="radio">
+                <label for="double-ham">Double ham</label>
+            </div>
+            <div>
+                <input id="pepperoni" name="extra" value="200" type="radio">
+                <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+                <input id="fruitsofthesea" name="extra" value="1200" type="radio">
+                <label for="fruitsofthesea">Fruits of the Sea</label>
+            </div>
+            <div>
+                <label for="sauce">Sauce</label>
+                <select name="Sauce" id="sauce">
+                    <option value="0" selected>Tomato sauce</option>
+                    <option value="100">Worchester sauce</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Quantity: </label>
+                <input id="quantity" name="quantity" min="1" max="10" type="number">
+            </div>
+            <div>
+                <input value="Submit order" type="button">Price: <span>1200</span> Ft
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

@@ -22,8 +22,9 @@ p {
     text-transform: none;
     line-height: normal;
     font-weight: lighter;
-    background-color: rgba(255, 221, 110, 0.6);
+    background-color: rgba(255, 221, 110, 0.8);
     display: block;
+    font-style: italic;
 }
 
 .button {
@@ -67,18 +68,7 @@ p {
 
 .offers {
     background-color: rgba(255, 221, 110, 0.6);
-    display: inline-block;
+    display: block;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
-
-#palinkaoffer {
-        color: rgb(14, 134, 24);
-        font-size: 20px;
-        font-family: 'Kodchasan', sans-serif;
-        text-align: left;
-        line-height: normal;
-        background-color: rgba(255, 221, 110, 0.8);
-        display: inline-block;
-        font-style: italic;
-           }
