@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan&family=Roboto&display=swap');
 
 html {
-    text-transform: uppercase;
+    text-transform: none;
+    background-image: url(../img/background4.jpg);
+    background-position: left;
+    background-repeat: repeat;
+    opacity: 0.9;
 }
 
 h1 {
@@ -18,3 +22,40 @@ p {
     text-transform: lowercase;
     line-height: normal;
     font-weight: lighter;
+}
+
+.button {
+    width: 22%;
+    border: none;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px #c0c0c0;
+    color: rgb(3, 3, 3);
+    background-color: rgb(255, 221, 110);
+}
+#restaurantname {
+    text-align: center;
+    color: green;
+    background-color: rgb(255, 239, 187);
+}
+.stepstitle {
+    background-color: rgba(255, 221, 110, 0.6);
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+.steps {
+    background-color: rgba(255, 221, 110, 0.6);
+    display: block;
+    background-size: 100px 10px;
+    font-weight: bold;
+}
+.burgerlink {
+    font-size: large;
+}
