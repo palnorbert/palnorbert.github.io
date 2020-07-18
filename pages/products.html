@@ -4,50 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Főoldal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <a class="button" href="/">Home</a>
-
-        <a class="button" href="/pages/products.html">Products</a>
-
-        <a class="button" href="/pages/orders.html">Orders</a>
-
-        <a class="button" href="/about.html">About</a>
-
-
-    </div>
-    <h1>Products</h1>
-    </ul>
-    <h2>Burgers</h2>
-    <ul>
-        <li>
-            Meat lover
-            <ul>
-                <li>Beef</li>
-                <li>Pork</li>
-                <li>Turkey</li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/products.html">Kínálatunk <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/orders.html">Rendelések</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Rólunk <span class="sr-only">(current)</span></a>
+                </li>
+                </li>
             </ul>
-        </li>
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
-    <h2>Sandwiches</h2>
-    <ul>
-        <li>Pulled Pork</li>
-        <li>Chicken breast fillet, cheese filled</li>
-    </ul>
-    <h2>Speciality of the House</h2>
-    <ul>
-        <li style="color:purple">Pasagne a la Vincze</li>
-        <li style="color: green;">Leaven Bread a la Pálfi</li>
-    </ul>
-    <h2>Side meals</h2>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div>
+        <a class="button" href="/">Főoldal</a>
 
+        <a class="button" href="/pages/products.html">Kínálatunk</a>
+
+        <a class="button" href="/pages/orders.html">Rendelések</a>
+
+        <a class="button" href="/about.html">Rólunk</a>
+    </div>
+
+    <div style="text-align: center; font-size: 40px; color: navy;">Étlap</div>
+
+    <table style="width: 80%; margin-left: 10%; margin-right: 10%" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center"></th>
+                <th colspan="7" scope="col" style="text-align: center; color: seagreen;">Előételek</th>
+                <th scope="col" style="text-align: center"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row" style="text-align: center">1</td>
+                <td colspan="7" scope="col" style="text-align: center;">Padlizsánkrém pitával</td>
+                <td style="text-align: center">590 Ft</td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">2</td>
+                <td colspan="7" scope="col" style="text-align: center;">Kuszkusz saláta</td>
+                <td style="text-align: center">690 Ft</td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">3</td>
+                <td colspan="7" scope="col" style="text-align: center;">Zellerkrémleves</td>
+                <td style="text-align: center">650 Ft</td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">4</td>
+                <td colspan="7" scope="col" style="text-align: center;">Pikáns cheddarsajt krémleves kukoricaropogóssal
+                </td>
+                <td style="text-align: center">850 Ft</td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">5</td>
+                <td colspan="7" scope="col" style="text-align: center;">Tárkonyos pulykaraguleves</td>
+                <td style="text-align: center">950 Ft</td>
+
+            </tr>
+
+            <tr>
+                <td scope="row" style="text-align: center"></td>
+                <td colspan="7" scope="col" style="text-align: center; color: seagreen;"><b><i>Hamburgerek</i></b></td>
+                <td style="text-align: center"></td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">6</td>
+                <td colspan="7" scope="col" style="text-align: center;">Angus Marhahússal</td>
+                <td style="text-align: center">2400 Ft</td>
+
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">6</td>
+                <td colspan="7" scope="col" style="text-align: center;">Tépett sertéshússal</td>
+                <td style="text-align: center">1700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">8</td>
+                <td colspan="7" scope="col" style="text-align: center;">Pulykamellfilével</td>
+                <td style="text-align: center">1800 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">9</td>
+                <td colspan="7" scope="col" style="text-align: center;">Vegetáriánus</td>
+                <td style="text-align: center">1600 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">10</td>
+                <td colspan="7" scope="col" style="text-align: center;">Piedone</td>
+                <td style="text-align: center">2000 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center"></td>
+                <td colspan="7" scope="col" style="text-align: center; color: seagreen;"><b>Főételek</b></td>
+                <td style="text-align: center"></td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">11</td>
+                <td colspan="7" scope="col" style="text-align: center;">Mediterrán csirke bulgurral</td>
+                <td style="text-align: center">2500 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">12</td>
+                <td colspan="7" scope="col" style="text-align: center;">Pasagne <span
+                        style="color: saddlebrown;"><i>(padlizsános túrós rakott tészta)</i></span></td>
+                <td style="text-align: center">3100 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">13</td>
+                <td colspan="7" scope="col" style="text-align: center;">Tőkehalfilé spenótos burgonyapürével</td>
+                <td style="text-align: center">3900 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">14</td>
+                <td colspan="7" scope="col" style="text-align: center;">Fehérboros tengergyümölcsei ragu, medvehagymás
+                    széles metélttel</td>
+                <td style="text-align: center">4100 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">15</td>
+                <td colspan="7" scope="col" style="text-align: center;">Bélszínsteak édesburgonyahasábbal és mentás
+                    uborkasalátával</td>
+                <td style="text-align: center">4500 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center"></td>
+                <td colspan="7" scope="col" style="text-align: center; color: seagreen;"><b>Köretek</b></td>
+                <td style="text-align: center"></td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">16</td>
+                <td colspan="7" scope="col" style="text-align: center;">Basmati rizs</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">17</td>
+                <td colspan="7" scope="col" style="text-align: center;">Petrezselymes burgonya</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">18</td>
+                <td colspan="7" scope="col" style="text-align: center;">Sült édesburgonyahasábok</td>
+                <td style="text-align: center">800 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">19</td>
+                <td colspan="7" scope="col" style="text-align: center;">Zöldséges bulgur</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">20</td>
+                <td colspan="7" scope="col" style="text-align: center;">Kuszkusz</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center"></td>
+                <td colspan="7" scope="col" style="text-align: center; color: seagreen;"><b>Desszertek</b></td>
+                <td style="text-align: center"></td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">21</td>
+                <td colspan="7" scope="col" style="text-align: center;">Sacher fagylalt erdei gyümölcsökkel</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">22</td>
+                <td colspan="7" scope="col" style="text-align: center;">Sajttál friss zamatos szőlőfürttel</td>
+                <td style="text-align: center">600 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">23</td>
+                <td colspan="7" scope="col" style="text-align: center;">Epres krémleves</td>
+                <td style="text-align: center">600 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">24</td>
+                <td colspan="7" scope="col" style="text-align: center;">Sütőtökös sajttorta</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">25</td>
+                <td colspan="7" scope="col" style="text-align: center;">Mangós tápiókapuding</td>
+                <td style="text-align: center">700 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">25</td>
+                <td colspan="7" scope="col" style="text-align: center;">Túrógombóc, házi áfonyalekvárral</td>
+                <td style="text-align: center">800 Ft</td>
+            </tr>
+            <tr>
+                <td scope="row" style="text-align: center">25</td>
+                <td colspan="7" scope="col" style="text-align: center;">Almáspite</td>
+                <td style="text-align: center">600 Ft</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

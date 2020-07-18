@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -11,13 +13,13 @@
 <body>
     <div>
 
-        <a class="button" href="/">Home</a>
+        <a class="button" href="/">Főoldal</a>
 
-        <a class="button" href="/pages/products.html">Products</a>
+        <a class="button" href="/pages/products.html">Kínálatunk</a>
 
-        <a class="button" href="/pages/orders.html">Orders</a>
+        <a class="button" href="/pages/orders.html">Rendelések</a>
 
-        <a class="button" href="/about.html">About</a>
+        <a class="button" href="/about.html">Rólunk</a>
 
 
     </div>
@@ -45,50 +47,55 @@
                     <textarea id="comment" name="comment" rows="5"></textarea>
                 </div>
             </fieldset>
-<Fieldset>
-    <legend>Product Information</legend>
-    <span>Extra topping:</span>
-    <div>
-        <input checked id="nothing" name="extra" value="0" type="radio">
-        <label for="nothing">I wouldn't like to have any.</label>
-    </div>
-    <div>
-        <input id="cheese" name="extra" value="300" type="radio">
-        <label for="cheese">Cheese</label>
-    </div>
-    <div>
-        <input id="double-cheese" name="extra" value="600" type="radio">
-        <label for="double-cheese">Double cheese</label>
-    </div>
-    <div>
-        <input id="double-ham" name="extra" value="1000" type="radio">
-        <label for="double-ham">Double ham</label>
-    </div>
-    <div>
-        <input id="pepperoni" name="extra" value="200" type="radio">
-        <label for="pepperoni">Pepperoni</label>
-    </div>
-    <div>
-        <input id="fruitsofthesea" name="extra" value="1200" type="radio">
-        <label for="fruitsofthesea">Fruits of the Sea</label>
-    </div>
-    <div>
-        <label for="sauce">Sauce</label>
-        <select name="Sauce" id="sauce">
-            <option value="0" selected>Tomato sauce</option>
-            <option value="100">Worchester sauce</option>
-        </select>
-    </div>
-    <div>
-        <label for="quantity">Quantity: </label>
-        <input id="quantity" name="quantity" min="1" max="10" type="number">
-    </div>
-</Fieldset>
+            <Fieldset>
+                <legend>Product Information</legend>
+                <span>Extra topping:</span>
+                <div>
+                    <input checked id="nothing" name="extra" value="0" type="radio">
+                    <label for="nothing">I wouldn't like to have any.</label>
+                </div>
+                <div>
+                    <input id="cheese" name="extra" value="300" type="radio">
+                    <label for="cheese">Cheese</label>
+                </div>
+                <div>
+                    <input id="double-cheese" name="extra" value="600" type="radio">
+                    <label for="double-cheese">Double cheese</label>
+                </div>
+                <div>
+                    <input id="double-ham" name="extra" value="1000" type="radio">
+                    <label for="double-ham">Double ham</label>
+                </div>
+                <div>
+                    <input id="pepperoni" name="extra" value="200" type="radio">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div>
+                    <input id="fruitsofthesea" name="extra" value="1200" type="radio">
+                    <label for="fruitsofthesea">Fruits of the Sea</label>
+                </div>
+                <div>
+                    <label for="sauce">Sauce</label>
+                    <select name="Sauce" id="sauce">
+                        <option value="0" selected>Tomato sauce</option>
+                        <option value="100">Worchester sauce</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity-input">Quantity: </label>
+                    <input id="quantity-input" name="quantity-input" class="form-control" min="1" max="100" type="number">
+                </div>
+            </Fieldset>
             <div>
-                <input value="Submit order" type="button">Price: <span>1200</span> Ft
+                <div class="form-group">
+                    Fizetendő: <span class="show-amount">0</span>Ft
+                </div>
             </div>
+            <button onclick="calcAmount()" type="button" class="btn btn-primary">Submit Order</button>
         </form>
     </div>
+    <script src="../js/main.js">
+    </script>
 </body>
 
 </html>
