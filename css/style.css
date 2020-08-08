@@ -2,10 +2,7 @@
 
 html {
     text-transform: none;
-    background-image: url(../img/background4.jpg);
-    background-position: left;
-    background-repeat: repeat;
-    opacity: 0.9;
+    background-color: lemonchiffon;
 }
 
 h1 {
@@ -45,30 +42,41 @@ p {
 #restaurantname {
     text-align: center;
     color: green;
-    background-color: rgb(255, 239, 187);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-shadow: rgb(48, 148, 57) 2px 2px 2px;
+    font-weight: 400;
 }
+#restaurantspan {
+    background-color: rgba(249, 251, 128, 0.931);
+}
+
 .stepstitle {
-    background-color: rgba(255, 221, 110, 0.6);
-    display: inline-block;
+        display: inline-block;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 .steps {
-    background-color: rgba(255, 221, 110, 0.6);
-    display: block;
+        display: block;
     background-size: 100px 10px;
     font-weight: bold;
 }
 .burgerlink {
     font-size: large;
     font-weight: bolder;
-    padding-right: 30px;
+    padding-right: 80px;
     display: inline-block;
+    text-align: center;
+    align-content: center;
 }
 
 .offers {
-    background-color: rgba(255, 221, 110, 0.6);
     display: block;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+body {
+    background-color: lemonchiffon;
+    
 }
