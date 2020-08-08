@@ -9,7 +9,7 @@ function calcAmount() {
 
 function calcWeather() {
     let days = ('Hétfő', 'Kedd', 'Szerda', 'Csütörtök', 'Péntek', 'Szombat', 'Vasárnap')
-    callByReference(days){
+    callByReference(days); {
         console.log('Napi hőmérséklet:')
         console.log(weather.js)
         console.log('°C')
