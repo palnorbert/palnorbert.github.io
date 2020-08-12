@@ -33,43 +33,43 @@
         <form>
             <fieldset>
                 <legend>
-                    Personal Data
+                    Személyes adatok
                 </legend>
                 <div>
-                    <label for="name">Name:*</label>
-                    <input id="name" name="name" type="text" placeholder="Name" required>
+                    <label for="name">Név:*</label>
+                    <input id="name" name="name" type="text" placeholder="Név" required>
                 </div>
                 <div>
-                    <label for="email">Email address:*</label>
-                    <input id="email" name="email" type="email" placeholder="Email address" required>
+                    <label for="email">Email cím:*</label>
+                    <input id="email" name="email" type="email" placeholder="Email cím" required>
                 </div>
                 <div>
-                    <label for="address">Address:*</label>
-                    <input id="address" name="address" type="text" placeholder="Address" required>
+                    <label for="address">Lakcím:*</label>
+                    <input id="address" name="address" type="text" placeholder="Lakcím" required>
                 </div>
                 <div>
-                    <label for="comment">Comment:*</label>
+                    <label for="comment">Megjegyzés:*</label>
                     <textarea id="comment" name="comment" rows="5"></textarea>
                 </div>
             </fieldset>
             <Fieldset>
-                <legend>Product Information</legend>
-                <span>Extra topping:</span>
+                <legend>Termék információ</legend>
+                <span>Extra feltét:</span>
                 <div>
                     <input checked id="nothing" name="extra" value="0" type="radio">
-                    <label for="nothing">I wouldn't like to have any.</label>
+                    <label for="nothing">Nem kérek extra feltétet.</label>
                 </div>
                 <div>
                     <input id="cheese" name="extra" value="300" type="radio">
-                    <label for="cheese">Cheese</label>
+                    <label for="cheese">Sajt</label>
                 </div>
                 <div>
                     <input id="double-cheese" name="extra" value="600" type="radio">
-                    <label for="double-cheese">Double cheese</label>
+                    <label for="double-cheese">Extra sajt</label>
                 </div>
                 <div>
                     <input id="double-ham" name="extra" value="1000" type="radio">
-                    <label for="double-ham">Double ham</label>
+                    <label for="double-ham">Extra sonka</label>
                 </div>
                 <div>
                     <input id="pepperoni" name="extra" value="200" type="radio">
@@ -77,26 +77,30 @@
                 </div>
                 <div>
                     <input id="fruitsofthesea" name="extra" value="1200" type="radio">
-                    <label for="fruitsofthesea">Fruits of the Sea</label>
+                    <label for="fruitsofthesea">Tenger gyümölcsei</label>
                 </div>
                 <div>
-                    <label for="sauce">Sauce</label>
+                    <label for="sauce">Szósz</label>
                     <select name="Sauce" id="sauce">
-                        <option value="0" selected>Tomato sauce</option>
-                        <option value="100">Worchester sauce</option>
+                        <option value="0" selected>Paradicsomszósz</option>
+                        <option value="100">Worchester szósz</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="quantity-input">Quantity: </label>
-                    <input id="quantity-input" name="quantity-input" class="form-control" min="1" max="100" type="number">
+                    <label for="amount-input">Mennyiség: </label>
+                    <input id="amount-input" name="amount-input" class="form-control" min="1" max="100" type="number">
                 </div>
             </Fieldset>
             <div>
                 <div class="form-group">
                     Fizetendő: <span class="show-amount">0</span>Ft
                 </div>
+                <div class="form-group">
+                    Megadott lakcím: <span class="show-address">-</span>
+                </div>
             </div>
-            <button onclick="calcAmount()" type="button" class="btn btn-primary">Submit Order</button>
+            <button onclick="calcAmount();" id="buttonOrder" type="button" class="btn btn-primary">Rendelés
+                leadása</button>
         </form>
     </div>
     <script src="../js/main.js">
