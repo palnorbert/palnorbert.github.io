@@ -14,7 +14,7 @@ function calcAmount() {
             amount = amount + 500;
         } else {
             alert("5000Ft feletti vásárlás esetén a házhozszállítás ingyenes!");
-        } 
+        }
         showAmount.innerHTML = amount.toFixed();
     }
 
@@ -54,4 +54,26 @@ function calcWeather() {
         console.log(weather.js)
         console.log('°C')
     }
+}
+
+function weatherWidget() {
+    let selectedDay = document.querySelector("select#daySelect");
+    weekofDay = selectedDay.option.value
+    if (weekofDay = 0) {
+        console.log("Hétfő");
+    }else if (weekofDay = 1) {
+        console.log("Kedd");
+    }else if (weekofDay = 2) {
+        console.log("Szerda");
+    }else if (weekofDay = 3) {
+        console.log("Csütörtök");
+    }else if (weekofDay = 4) {
+        console.log("Péntek");
+    }else if (weekofDay = 5) {
+        console.log("Szombat");
+    } else if (weekofDay = 6) {
+        console.log("Vasárnap");
+    }
+        let presentTemp = document.querySelector("span.show-temp");
+        presentTemp.innerHTML = weekofDay;
 }

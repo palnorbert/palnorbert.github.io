@@ -32,6 +32,23 @@
     <div class="container">
         <form>
             <fieldset>
+                <legend>Időjárás</legend>
+                <select style="height: 2.2em;" name="Időjárás" id="daySelect" class="form-control">
+                    <option value="0">Hetfő</option>
+                    <option value="1">Kedd</option>
+                    <option value="2">Szerda</option>
+                    <option value="3">Csütörtök</option>
+                    <option value="4">Péntek</option>
+                    <option value="5">Szombat</option>
+                    <option value="6">Vasárnap</option>
+                </select>
+                <button class="btn btn-info" type="button" onclick="idoApp()">Napi időjárás lekérdezése</button>
+                <div class="form-group" style="text-transform: uppercase;">
+                  <h4> Hőmérséklet: <span class="show-temp"></span>  °C <span class="fahr" ></span>  °F</h4>
+                </div>           
+            </fieldset>
+            <div class="ajanlat" style="text-transform: uppercase; font-size: larger; font-weight: 600;" ></div>
+            <fieldset style="margin-top: 2em;">
                 <legend>
                     Személyes adatok
                 </legend>
@@ -104,6 +121,8 @@
         </form>
     </div>
     <script src="../js/main.js">
+    </script>
+    <script src="../js/weather.js">
     </script>
 </body>
 
