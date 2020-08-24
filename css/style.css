@@ -24,6 +24,14 @@ p {
     font-style: italic;
 }
 
+#invisible {
+    visibility: hidden;
+}
+
+#today-degree, #today-degreefa, #today-offer {
+    font-weight: bold;
+}
+
 .button {
     width: 21%;
     border: none;

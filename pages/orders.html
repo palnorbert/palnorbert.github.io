@@ -29,25 +29,42 @@
     font-style: italic;
     text-shadow: rgb(48, 148, 57) 2px 2px 2px;
     font-weight: 400; text-align: center; font-size: 40px; background-color: lemonchiffon;">Rendelések</h1>
-    <div class="container">
+    <div class="alert alert-info container">
         <form>
-            <fieldset>
-                <legend>Időjárás</legend>
-                <select style="height: 2.2em;" name="Időjárás" id="daySelect" class="form-control">
-                    <option value="0">Hetfő</option>
-                    <option value="1">Kedd</option>
-                    <option value="2">Szerda</option>
-                    <option value="3">Csütörtök</option>
-                    <option value="4">Péntek</option>
-                    <option value="5">Szombat</option>
-                    <option value="6">Vasárnap</option>
-                </select>
-                <button class="btn btn-info" type="button" onclick="idoApp()">Napi időjárás lekérdezése</button>
-                <div class="form-group" style="text-transform: uppercase;">
-                  <h4> Hőmérséklet: <span class="show-temp"></span>  °C <span class="fahr" ></span>  °F</h4>
-                </div>           
-            </fieldset>
-            <div class="ajanlat" style="text-transform: uppercase; font-size: larger; font-weight: 600;" ></div>
+            <div class="form-inline">
+                <div class="col-auto">Időjárás-Előrejelzés</div>
+                <div class="col-auto">
+                    <div class="form-group">
+                        <select class="custom-select" name="days-of-week" id="days-of-week">
+                            <option selected>Válassz...</option>
+                            <option value="0">Hétfő</option>
+                            <option value="1">Kedd</option>
+                            <option value="2">Szerda</option>
+                            <option value="3">Csütörtök</option>
+                            <option value="4">Péntek</option>
+                            <option value="5">Szombat</option>
+                            <option value="6">Vasárnap</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button onclick="weatherOfDay()" type="button" class="btn btn-secondary">
+                        Mutasd!
+                    </button>
+                </div>
+
+                <div class="col-auto">
+                    A hőmérséklet:
+                    <span id="today-degree">0</span> &degC <span id="invisible">1</span>
+                    <span id="today-degreefa">0</span> &degF
+                </div>
+                <div class="col-auto">
+                    Mai ajánlatunk: <span id="today-offer"></span>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+            <div class="ajanlat" style="text-transform: uppercase; font-size: larger; font-weight: 600;"></div>
             <fieldset style="margin-top: 2em;">
                 <legend>
                     Személyes adatok
@@ -118,6 +135,7 @@
             </div>
             <button onclick="calcAmount();" id="buttonOrder" type="button" class="btn btn-primary">Rendelés
                 leadása</button>
+
         </form>
     </div>
     <script src="../js/main.js">
