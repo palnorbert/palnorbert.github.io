@@ -44,6 +44,12 @@ p {
   #avg-temp {
       color:  rgb(48, 148, 57);
   }
+  #neg-temp {
+      color:  rgb(34, 199, 214);
+  }
+  #hot-temp {
+      color:  rgb(171, 24, 230);
+  }
 
 #invisible {
     visibility: hidden;
@@ -68,6 +74,23 @@ p {
     color: rgb(3, 3, 3);
     background-color: rgb(255, 221, 110);
 }
+
+.buttonGame {
+    width: 5%;
+    border: none;
+    padding: 0.9% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.4% 0.2%;
+    cursor: pointer;
+    box-shadow: 2px 2px #c0c0c0;
+    color: rgb(3, 3, 3);
+    background-color: rgb(255, 221, 110);
+}
+
 #restaurantname {
     text-align: center;
     color: green;
