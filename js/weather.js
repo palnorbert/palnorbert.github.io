@@ -7,7 +7,7 @@ function weatherOfDay() {
     let showDegree = document.querySelector("span#today-degree");
     showDegree.innerHTML = week[valueSelectedDay];
     let showDegreeFa = document.querySelector("span#today-degreefa");
-    showDegreeFa.innerHTML = week[valueSelectedDay]*9 / 5 + 32;
+    showDegreeFa.innerHTML = week[valueSelectedDay] * 9 / 5 + 32;
     let showOffer = document.querySelector("span#today-offer");
 
     for (let i = 0; i < maxDegree.length; i++) {
@@ -15,23 +15,23 @@ function weatherOfDay() {
         if (week[valueSelectedDay] < maxDegree[i]) {
             showOffer.innerHTML = offers[i];
             break;
-          
+
         }
-    
+
     }
-  
+
 }
 
 let max = week[0];
-for (let i=0; i < week.length; i++) {
-if(week[i]>max){
-    max = week[i];
-}
+for (let i = 0; i < week.length; i++) {
+    if (week[i] > max) {
+        max = week[i];
+    }
 }
 document.getElementById("max-temp").innerHTML = "A héten várható legmagasabb hőmérséklet: " + max + "°C"
 
 let min = week[0];
-for (let j =0; j < week.length; j++) {
+for (let j = 0; j < week.length; j++) {
     if (week[j] < min) {
         min = week[j];
     }
@@ -39,27 +39,29 @@ for (let j =0; j < week.length; j++) {
 document.getElementById("min-temp").innerHTML = "A héten várható legalacsonyabb hőmérséklet: " + min + "°C"
 
 let sum = 0;
-for (let k = 0; k< week.length; k++) {
-sum += week[k]
-avg = sum/week.length
+for (let k = 0; k < week.length; k++) {
+    sum += week[k]
+    avg = sum / week.length
 }
 document.getElementById("avg-temp").innerHTML = "A héten várható átlaghőmérséklet: " + avg.toPrecision(4) + "°C"
 
 let negTemp = false;
-for (let l = 0; l < week.length && negTemp==false; l++) {
-    if(week[l]<0) {
+for (let l = 0; l < week.length && negTemp == false; l++) {
+    if (week[l] < 0) {
         negTemp = true;
     }
 }
 document.getElementById("neg-temp").innerHTML = "A következő héten lesznek minuszok."
 
 let hotTemp = 0;
-for (let m = 0; m<week.length; m++) {
-    if(week[m] > 30) {
+for (let m = 0; m < week.length; m++) {
+    if (week[m] > 30) {
         hotTemp++;
     }
 }
 document.getElementById("hot-temp").innerHTML = "A következő héten " + hotTemp + " nap lesz kánikula.";
+
+
 
 // /*
 // Összegzés algoritmusa:

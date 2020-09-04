@@ -30,8 +30,33 @@
     text-shadow: rgb(48, 148, 57) 2px 2px 2px;
     font-weight: 400; text-align: center; font-size: 40px; background-color: lemonchiffon;">Rólunk</h1>
 
-    <div class="contact" style="padding-left: 10px;">etterem@lettuceeat.hu rendeles@lettuceeat.hu Étterem (06 00 000 0000) Házhozszállítás (06 00
-        100 0000) </div>
+<div class="container contact">
+    <div class="row">
+      <div class="col-sm">
+        1000 Budapest, Piripócs utca 1.
+      </div>
+      <div class="col-sm">
+        etterem@lettuceeat.hu
+      </div>
+      <div class="col-sm">
+        Házhozszállítás, Asztalfoglalás:  (06 00 100 0000)
+      </div>
+    </div>
+  </div>    
+  <div class="container">
+    <div class="row">
+      <div class="col-3" id="currentTime">
+        
+      </div>
+      <div class="col-6 isItOpen" id="storeStatus">
+        Üzletünk jelenleg:
+      </div>
+      <div class="col-3 isItOpen">
+         van.
+      </div>
+         </div>
+  </div>
+    <div class="col-sm" ></div>
     <table>
         <caption style="caption-side: top; font-weight: bold; color: black; text-decoration: underline; padding-left: 10px;">Opening hours:</caption>
         <thead>
@@ -69,4 +94,5 @@
     <p class="tempcalc" id="hot-temp"></p>
 </body>
 <script src="js/weather.js"></script>
+<script src="js/time.js"></script>
 </html>

@@ -91,6 +91,33 @@ p {
     background-color: rgb(255, 221, 110);
 }
 
+.contact {
+    padding-left: 10px;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(5, 90, 30);
+}
+
+.no-spacing {
+    word-spacing: 0rem;
+}
+
+#currentTime {
+    font-weight: 650;
+    color: green;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.isItOpen {
+    font-weight: 650;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
 #restaurantname {
     text-align: center;
     color: green;
